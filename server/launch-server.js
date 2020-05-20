@@ -514,7 +514,7 @@ module.exports = function(outFolder, port, staticMaxAge, runtimeLogs, callback) 
         console.log(`\tMake sure the gateway registered in the network server running the *legacy packet forwarder*`);
     });
 
-    console.log('Mbed Simulator v' + version);
+    console.log('Pelion Device Simulator v' + version);
 
     server.listen(port, process.env.HOST || '0.0.0.0', function () {
         console.log('Web server listening on port %s!', port);

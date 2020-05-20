@@ -8,8 +8,8 @@ ENV EMSCRIPTEN_NATIVE_OPTIMIZER="/emsdk/emscripten/tag-1.38.21_64bit_optimizer/o
 
 RUN apt-get update -qq && apt-get -qqy install \
         cmake git python-dev python-pip && \
-    pip install mbed-cli mercurial && \
-    git clone https://github.com/emscripten-core/emsdk
+    pip install mbed-cli==1.10.2 mercurial && \
+    git clone https://github.com/emscripten-core/emsdk && cd emsdk && git checkout 1.39.8 && cd ..
 
 RUN emsdk/emsdk install fastcomp-clang-e1.38.21-64bit && \
     emsdk/emsdk activate fastcomp-clang-e1.38.21-64bit && \

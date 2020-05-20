@@ -1,7 +1,7 @@
 {
-  "name": "mbed-simulator",
-  "version": "1.9.7",
-  "description": "Mbed OS 5 simulator",
+  "name": "pelion-device-simulator",
+  "version": "0.0.1",
+  "description": "Pelion Device Simulator",
   "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janjongboom/mbed-simulator.git"
+    "url": "git+https://github.com/cvasilak/pelion-device-simulator"
   },
   "keywords": [
     "mbed",
     "simulator"
   ],
-  "author": "Jan Jongboom <jan.jongboom@arm.com>",
+  "contributors": ["Jan Jongboom <jan.jongboom@arm.com>", "Christos Vasilakis <christos.vasilakis@arm.com"],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/janjongboom/mbed-simulator/issues"
+    "url": "https://github.com/cvasilak/pelion-device-simulator/issues"
   },
-  "homepage": "https://github.com/janjongboom/mbed-simulator#readme",
+  "homepage": "https://github.com/cvasilak/pelion-device-simulator#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "command-exists": "^1.2.2",
