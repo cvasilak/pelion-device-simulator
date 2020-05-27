@@ -16,12 +16,14 @@ RUN emsdk/emsdk install fastcomp-clang-e1.38.21-64bit && \
     emsdk/emsdk install emscripten-tag-1.38.21-64bit && \
     emsdk/emsdk activate emscripten-tag-1.38.21-64bit
 
-ADD . /app
-
+ADD internal /app
 WORKDIR /app
+RUN npm install && npm run build-demos -i demos
 
-RUN npm install && npm run build-demos
+ADD peliondm/example /app/demos/peliondm
+ADD peliondm/build-pelion-and-launch.js /app
 
 EXPOSE 7829
 
-CMD ["node", "server.js"]
+#CMD ["node", "server.js"]
+CMD ["npm", "run", "build-pelion-and-launch"]

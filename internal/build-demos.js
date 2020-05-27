@@ -28,7 +28,7 @@ function buildDemo(root_demos_directory, demo_directory) {
 }
 
 program.option(
-    '-i --input-dir <dir>', 'Input directory for the demos', 'demos'
+    '-i --input-dir <dir>', 'Input directory', 'demos'
 );
 program.parse(process.argv);
 

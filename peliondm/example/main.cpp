@@ -78,6 +78,7 @@ void registered(const ConnectorClientEndpointInfo *endpoint) {
 }
 
 int main() {
+    printf("foobar!\n");
     NetworkInterface *net = NetworkInterface::get_default_instance();
     nsapi_error_t status = net->connect();
 
