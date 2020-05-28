@@ -11,7 +11,7 @@ program.parse(process.argv);
 
 // if not already compiled, kickstart certificate generation and compilation
 if (!fs.existsSync(`${demo_output_directory}/peliondm.wasm`)) {
-    console.log(`NOTE: first-run detected, need to generate dev certificate and build pelion-demo (subsequent invocations won't ne ed it) ...\n`);
+    console.log(`NOTE: first-run detected, need to generate dev certificate and build pelion-demo (subsequent invocations won't need it) ...\n`);
     
     console.log(`Generating credentials file ...`);
     const genCertResult = child_process.spawnSync(
